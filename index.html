@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html>
+    <head>
+       <script src="http://media.twiliocdn.com/sdk/js/flex/releases/1.0.0/twilio-flex-webchat.min.js"></script>
+    </head>
 <body>
-<h1>Hello World</h1>
-
-<p>I'm hosted with GitHub Pages.</p>
-<script src="https://cdn.smooch.io/smooch.min.js"></script>
-<script>
-    Smooch.init({appToken: '81dcqrha425wa9dcqq4cwzb40'});
-</script>
+    <h1>Hello World</h1>
+    <p>I'm hosted with GitHub Pages.</p>
+    <script>
+            const appConfig = {
+                accountSid = "ACc1b61cd9788fc301300cd397775e9e61",
+                flexFlowSid = "FO..."
+            };
+            Twilio.Flex.createWebChat(appConfig);
+    </script>
 </body>
 </html>

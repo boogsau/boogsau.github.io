@@ -11,8 +11,14 @@
             const appConfig = {
                 accountSid: "ACc1b61cd9788fc301300cd397775e9e61",
                 flexFlowSid: "FWdc18c054f2a638c1463136a9995c59d3"
-            };
-            Twilio.Flex.createWebChat(appConfig);
+            };          
+            const urlParams = new URLSearchParams(window.location.href);
+            const context = {
+                username: "Bob",
+                topic: "support",
+                agent: urlParams.has('agent') ? urlParams.get('agent') : ""
+           };
+            Twilio.Flex.createWebChat(appConfig);        
     </script>
 </body>
 </html>

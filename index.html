@@ -13,11 +13,6 @@
                 flexFlowSid: "FWdc18c054f2a638c1463136a9995c59d3"
             };          
             const urlParams = new URLSearchParams(window.location.href);
-            const context = {
-                username: "Bob",
-                topic: "support",
-                agent: urlParams.has('agent') ? urlParams.get('agent') : ""
-           };
             Twilio.Flex.createWebChat(appConfig);        
     </script>
 </body>

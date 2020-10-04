@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <script src="https://media.twiliocdn.com/sdk/js/flex-webchat/releases/1.0.0/twilio-flex-webchat.min.js"></script>
-
-    </head>
-<body>
-    <h1>Hello World</h1>
-    <p></p>
+    <script src="https://assets.flex.twilio.com/releases/flex-webchat-ui/2.6.0/twilio-flex-webchat.min.js"></script>
     <script>
             const appConfig = {
-                accountSid: "ACc1b61cd9788fc301300cd397775e9e61",
-                flexFlowSid: "FWdc18c054f2a638c1463136a9995c59d3"
-            };          
-        /*            const urlParams = new URLSearchParams(window.location.href); /*
-            Twilio.Flex.createWebChat(appConfig);        
-    </script>
-</body>
+                accountSid:"ACcc0f78fbb8d6158bf294723d0ffa582a",
+                flexFlowSid:"FOab1ac6fd5ae8260ddc8147780bd6987a"
+            };
+            Twilio.FlexWebChat.renderWebChat(appConfig);
+        </script>
+    </head>
+    <body>
+        <h1>Hello World</h1>
+        <p></p>    
+    </body>
 </html>

@@ -14,8 +14,14 @@
             };
             
             Twilio.FlexWebChat.renderWebChat(appConfig);
-            {Twilio.FlexWebChat.EntryPoint.defaultProps.tagline = "Chat";
+            {
+            Twilio.FlexWebChat.EntryPoint.defaultProps.tagline = "Chat";
             Twilio.FlexWebChat.MainHeader.defaultProps.showTitle = false;
+            Twilio.FlexWebChat.MessagingCanvas.defaultProps.predefinedMessage = {
+                body:"Hi there",
+                authorName: "Friendly bot",
+                isFromMe: false,
+            }
             }
         </script>
     </body>

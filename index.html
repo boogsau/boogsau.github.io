@@ -14,7 +14,8 @@
             };
             
             Twilio.FlexWebChat.renderWebChat(appConfig);
-            {Twilio.FlexWebChat.defaultProps.EntryPoint.tagline = "Chat";
+            {Twilio.FlexWebChat.EntryPoint.defaultProps.tagline = "Chat";
+            Twilio.FlexWebChat.MainHeader.defaultProps.showTitle = false;
             }
         </script>
     </body>

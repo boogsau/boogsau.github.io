@@ -10,10 +10,9 @@
         <script>
             const appConfig = {
                 accountSid:"ACcc0f78fbb8d6158bf294723d0ffa582a",
-                flexFlowSid:"FOab1ac6fd5ae8260ddc8147780bd6987a",
-                welcomeMessageText: "test"
-
+                flexFlowSid:"FOab1ac6fd5ae8260ddc8147780bd6987a"
             };
+            Twilio.FlexWebChat.MainHeader.defaultProps.welcomeMessageText = "test"; 
             Twilio.FlexWebChat.renderWebChat(appConfig);
         </script>
     </body>

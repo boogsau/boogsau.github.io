@@ -12,18 +12,20 @@
                 accountSid:"ACcc0f78fbb8d6158bf294723d0ffa582a",
                 flexFlowSid:"FOab1ac6fd5ae8260ddc8147780bd6987a"
             };
-            
+            const configuration = {
+                
+            };
             Twilio.FlexWebChat.renderWebChat(appConfig);
-            {
-            Twilio.FlexWebChat.EntryPoint.defaultProps.tagline = "Chat";
-            Twilio.FlexWebChat.MainHeader.defaultProps.showTitle = false;
-            Twilio.FlexWebChat.MainHeader.defaultProps.showImage = false;      
-            Twilio.FlexWebChat.MessagingCanvas.defaultProps.predefinedMessage = {
-                body:"Hi there",
-                authorName: "Friendly bot",
-                isFromMe: false,
-            }
-            }
+                {
+                Twilio.FlexWebChat.EntryPoint.defaultProps.tagline = "Chat";
+                Twilio.FlexWebChat.MainHeader.defaultProps.showTitle = false;
+                Twilio.FlexWebChat.MainHeader.defaultProps.showImage = false;      
+                Twilio.FlexWebChat.MessagingCanvas.defaultProps.predefinedMessage = {
+                    body:"Hi there",
+                    authorName: "Friendly bot",
+                    isFromMe: false,
+                    }
+                }
         </script>
     </body>
 </html>
